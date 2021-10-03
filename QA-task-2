@@ -1,0 +1,31 @@
+
+
+Напишите функцию, которая возвращает все варианты комбинаций членов списков, переданных на вход.
+
+Пример:
+
+pairwise([1, 2, 3], ['a'], [True, False]) = [
+    [1, 'a', True],
+    [1, 'a', False],
+    [2, 'a', True],
+    [2, 'a', False],
+    [3, 'a', True],
+    [3, 'a', False]
+]
+
+
+Для чтения и записи входных и выходных данных воспользуйтесь следующим шаблоном кода:
+
+import json
+
+
+def pairwise(*lists):
+    # TODO insert you code
+    return []
+
+
+if __name__ == "__main__":
+    input_str = input()
+    lists = json.loads(input_str)
+    answer = pairwise(*lists)
+    print(json.dumps(answer))
